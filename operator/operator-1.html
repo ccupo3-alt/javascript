@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+    // 연산자 : 계산하거나 비교할 때 쓰는 기호
+
+    // 산술 연산자 : 계산
+    let a = 10;
+    let b = 3;
+    console.log(a + b);
+    console.log(a - b);
+    console.log(a * b);
+    console.log(a / b);
+    console.log(a % b); // 나머지 값
+    
+    // 비교 연산자 : 값이 맞는지 확인
+    console.log(5 > 3); //true
+    console.log(5 < 3); // false
+    console.log(5 == 3); // false 5랑 3이랑 같은지
+    console.log(5 == "5"); //true 5랑 "5"랑 같은지
+    console.log(5 === "5"); //false 5랑 "5"랑 모든 속성이 완전히 같은지
+    console.log(5 != 3); //true 5랑 3은 같지 않다
+
+    // 논리 연산자 : 조건이 여러개일 때
+    let age = 20;
+    console.log(age > 18 && age < 30); // ~ 이면서 ~ (and) / 조건이 모두 해당되어야 true
+    console.log(age > 18 || age > 30); // ~ 이거나 ~ (or) / 조건이 하나만 해당되어도 true
+    // 반대로 바꾸기 (!는 부정의 의미)
+    let islogin = true;
+    console.log(!islogin); //false
+    
+    // 증가/감소 연산자
+    let count = 5;
+    count++ // ++은 증가의 의미
+    console.log(count); // 6
+    count-- // --는 감소의 의미
+    console.log(count); // 6-1 = 5
+    
+    </script>
+</body>
+</html>
